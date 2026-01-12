@@ -20,4 +20,10 @@ A dedicated Padel score counter and activity tracker built for the **Fitbit OS S
 1. Install [Node.js](https://nodejs.org/).
 2. Install the Fitbit SDK CLI:
    ```bash
-   npm install -g @fitbit/sdk-cli
+   npm install
+3. Enter into Fitbit shell:
+   ```bash
+   npx fitbit
+4. Build and Install:
+   ```bash
+   fitbit$> bi
