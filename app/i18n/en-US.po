@@ -1,0 +1,5 @@
+msgid "resume_btn"
+msgstr "RESUME"
+
+msgid "finish_btn"
+msgstr "FINISH"

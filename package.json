@@ -1,0 +1,43 @@
+{
+  "name": "padel",
+  "version": "1.0.0",
+  "description": "Padel Score & Tracker for Fitbit Versa 3",
+  "private": true,
+  "scripts": {
+    "format": "standard --fix",
+    "build": "fitbit-build",
+    "debug": "fitbit"
+  },
+  "keywords": [
+    "Fitbit",
+    "Sense",
+    "Versa 3",
+    "Padel",
+    "Exercise",
+    "Smartwatch"
+  ],
+  "author": "Patric Costa",
+  "license": "MIT",
+  "devDependencies": {
+    "@fitbit/sdk": "~6.1.0",
+    "@fitbit/sdk-cli": "^1.7.3"
+  },
+  "fitbit": {
+    "appUUID": "081b5c65-0644-4c46-8c98-8bdc47828041",
+    "appType": "app",
+    "appDisplayName": "Padel",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#00FF00",
+    "requestedPermissions": [
+      "access_heart_rate",
+      "access_activity",
+      "access_exercise",
+      "access_user_profile"
+    ],
+    "buildTargets": [
+      "atlas",
+      "vulcan"
+    ],
+    "defaultLanguage": "pt-BR"
+  }
+}

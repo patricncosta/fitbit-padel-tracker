@@ -1,0 +1,42 @@
+text {
+  font-family: System-Regular;
+}
+
+#labelA { fill: white; }
+#labelB { fill: white; }
+#setsScore { fill: #FFFF00; }
+
+.btn-menu {
+  opacity: 1;
+}
+
+#btnResume {
+  fill: #00A651;
+  stroke-width: 2;
+  stroke: #ffffff;
+}
+
+#btnFinish {
+  fill: #F83C40;
+  stroke-width: 2;
+  stroke: #ffffff;
+}
+
+.btn-text {
+  fill: white;
+  font-family: "System-Bold";
+  font-size: 24;
+  text-anchor: middle;
+}
+
+/* Stats (Calories and Session time) */
+#pauseTime {
+  fill: white;
+  font-size: 45;
+  font-family: "System-Bold";
+}
+
+#pauseKcal {
+  fill: #FFA500;
+  font-size: 28;
+}

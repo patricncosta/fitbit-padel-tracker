@@ -1,0 +1,51 @@
+<svg>
+  <link rel="import" href="widget.defs" />
+
+  <rect x="0" y="0" width="100%" height="45%" fill="fb-green" />
+  <text id="labelA" x="50%" y="22%" font-size="50" text-anchor="middle" text-length="32">0</text>
+  
+  <rect x="0" y="55%" width="100%" height="45%" fill="fb-red" />
+  <text id="labelB" x="50%" y="88%" font-size="50" text-anchor="middle" text-length="32">0</text>
+
+  <circle id="pA_left"  cx="25%" cy="38%" r="12" fill="white" />
+  <circle id="pA_right" cx="75%" cy="38%" r="12" fill="white" />
+  <circle id="pB_left"  cx="25%" cy="62%" r="12" fill="white" />
+  <circle id="pB_right" cx="75%" cy="62%" r="12" fill="white" />
+
+  <rect x="0" y="45%" width="100%" height="10%" fill="black" />
+  <text id="hrLabel" x="5%" y="53%" fill="fb-red" font-size="22" text-length="32">--</text>
+  <text id="setsScore" x="50%" y="53%" fill="fb-yellow" font-size="24" text-anchor="middle" text-length="32">0 - 0</text>
+
+  <rect id="btnTeamA" x="0" y="0" width="100%" height="44%" fill="black" opacity="0" pointer-events="all" />
+  <rect id="btnTeamB" x="0" y="56%" width="100%" height="44%" fill="black" opacity="0" pointer-events="all" />
+
+  <g id="undoGroup">
+    <circle cx="90%" cy="50%" r="28" fill="#555555" />
+    <text x="90%" y="54%" font-size="35" fill="white" text-anchor="middle" font-weight="bold" pointer-events="none">U</text>
+    <circle id="btnUndo" cx="90%" cy="50%" r="35" fill="black" opacity="0" pointer-events="all" />
+  </g>
+
+  <circle id="btnP0" cx="25%" cy="38%" r="35" fill="black" opacity="0" pointer-events="all" />
+  <circle id="btnP1" cx="75%" cy="38%" r="35" fill="black" opacity="0" pointer-events="all" />
+  <circle id="btnP2" cx="75%" cy="62%" r="35" fill="black" opacity="0" pointer-events="all" />
+  <circle id="btnP3" cx="25%" cy="62%" r="35" fill="black" opacity="0" pointer-events="all" />
+
+  <rect id="btnToggleStats" x="0" y="45%" width="25%" height="10%" fill="black" opacity="0" pointer-events="all" />
+
+  <svg id="pauseOverlay" display="none">
+    <rect x="0" y="0" width="100%" height="100%" fill="black" opacity="0.95" />
+    
+    <text id="pauseTime" x="50%" y="25%" text-anchor="middle">00:00:00</text>
+    <text id="pauseKcal" x="50%" y="38%" text-anchor="middle">0 KCAL</text>
+
+    <g transform="translate(5%, 60%)" pointer-events="all" id="groupResume">
+      <rect id="btnResume" x="0" y="0" width="42%" height="80" rx="20" ry="20" />
+      <text id="txtResume" x="21%" y="50" class="btn-text" pointer-events="none"  text-length="20"></text>
+    </g>
+
+    <g transform="translate(53%, 60%)" pointer-events="all" id="groupFinish">
+      <rect id="btnFinish" x="0" y="0" width="42%" height="80" rx="20" ry="20" />
+      <text id="txtFinish" x="21%" y="50" class="btn-text" pointer-events="none" text-length="20"></text>
+    </g>
+  </svg>
+</svg>
